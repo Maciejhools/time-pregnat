@@ -1,0 +1,82 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/dragos-gontariu-bqG4F5RBqoQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* padding: 20px; */
+    /* padding-bottom: 80px; */
+}
+
+.container .content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    /* background: rgba(0,0,0, .5); */
+}
+
+.container .content .title {
+    font-size: 55px;
+    color: #fff;
+    background: rgba(0,0,0, .45);
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.container .content .count-down {
+    display: flex;
+    /* padding: 60px; */
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .content .count-down .box h3 {
+    font-size: 50px;
+    color: #fff;
+    background: #222;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .content .count-down .box p {
+    font-size: 20px;
+    color: #222;
+    font-weight: bolder;
+    padding: 5px 0;
+}
+
+
+.container span {
+   position: absolute;
+   top: -50px;
+   border-radius: 50%;
+   width: 20px; 
+   height: 20px;
+   background: #fff;
+   filter: blur(3px);
+   animation: snowFall 5s linear infinite;
+}
+
+@keyframes snowFall {
+    100% {
+        transform: translateY(105vh) scale(.4);
+    }
+}
